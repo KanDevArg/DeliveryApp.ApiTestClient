@@ -1,0 +1,17 @@
+{
+    "id": "this is the ide for the order",
+    "delivery_address": "none",
+    "due_date": 2,
+    "items": [
+        {
+            "id": "1",
+            "desc": "item #1",
+            "qty": 11
+        },
+        {
+            "id": "2",
+            "desc": "item #2",
+            "qty": 9
+        }
+    ]
+}
