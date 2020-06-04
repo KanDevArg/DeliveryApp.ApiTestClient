@@ -190,6 +190,8 @@ github.com/jtolds/gls v4.20.0+incompatible/go.mod h1:QJZ7F/aHp+rZTRtaJ1ow/lLfFfV
 github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
 github.com/kandevarg/deliveryapp.productorderservice v1.0.0 h1:twBb6gFMXPtrGiJ+Jg9TolCKf6QYyn0SrAkvmiRx4H8=
 github.com/kandevarg/deliveryapp.productorderservice v1.0.0/go.mod h1:kOT2fLsRuQcl6t3cDrPRUYxGYv51cOTdHncMwcByjqw=
+github.com/kandevarg/deliveryapp.productorderservice v1.0.1 h1:gPzxGpzls7l4P5WBkWTclcRjOXtr4WGriWEXi3FVcnQ=
+github.com/kandevarg/deliveryapp.productorderservice v1.0.1/go.mod h1:kOT2fLsRuQcl6t3cDrPRUYxGYv51cOTdHncMwcByjqw=
 github.com/kevinburke/ssh_config v0.0.0-20190725054713-01f96b0aa0cd/go.mod h1:CT57kijsi8u/K/BOFA39wgDQJ9CxiF4nAY/ojJ6r6mM=
 github.com/kisielk/errcheck v1.1.0/go.mod h1:EZBBE59ingxPouuu3KfxchcWSUPOHkagtvWXihfKN4Q=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=

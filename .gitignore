@@ -2,4 +2,4 @@
 *.env
 
 # executable
-deliveryapp.apitestclient
+bin/
