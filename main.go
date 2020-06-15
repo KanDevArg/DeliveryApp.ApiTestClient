@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	protoGo "github.com/kandevarg/deliveryapp.orderservice/proto/protoGo"
+	orderServiceProtoGo "github.com/kandevarg/deliveryapp.orderservice/proto/protoGo"
 	goMicro "github.com/micro/go-micro"
 )
 
@@ -15,8 +15,8 @@ const (
 	inputFileName = "orderInput.json"
 )
 
-func parseInputFile(file string) (*protoGo.Order, error) {
-	var order *protoGo.Order
+func parseInputFile(file string) (*orderServiceProtoGo.Order, error) {
+	var order *orderServiceProtoGo.Order
 	data, err := ioutil.ReadFile(file)
 	if err != nil {
 		return nil, err
@@ -30,7 +30,7 @@ func main() {
 	microService := goMicro.NewService(goMicro.Name("deliveryapp.apitestclient"))
 	microService.Init()
 
-	orderServiceClient := protoGo.NewOrderServiceClient("deliveryapp.orderservice", microService.Client())
+	orderServiceClient := orderServiceProtoGo.NewOrderServiceClient("deliveryapp.orderservice", microService.Client())
 
 	file := inputFileName
 	if len(os.Args) > 1 {
@@ -49,7 +49,7 @@ func main() {
 	}
 	log.Printf("Created: %t", response.Created)
 
-	allOrders, err := orderServiceClient.GetAllOrders(context.Background(), &protoGo.BlankRequest{})
+	allOrders, err := orderServiceClient.GetAllOrders(context.Background(), &orderServiceProtoGo.BlankRequest{})
 
 	if err != nil {
 		log.Fatalf("Could not list consignments: %v", err)
