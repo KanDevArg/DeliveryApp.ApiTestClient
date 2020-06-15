@@ -1,5 +1,8 @@
 # ignore environment files
 *.env
 
-# executable
+# exec
 bin/
+
+# exec
+deliveryapp.apitestclient
